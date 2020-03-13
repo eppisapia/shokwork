@@ -1,12 +1,22 @@
 import React from 'react';
+import PortfolioCard from '../PortfolioCard';
 import './Sections.css'
 
-export default function PortfolioSection({ id }) {
-    return (
-        <div id={id}>
-            <Image style={{ width: "50%", minWidth: "350px" }} src="https://www.sector7apps.com/wp-content/uploads/2019/08/how-to-build-a-mobile-app-from-the-ground-up.jpg" />
-            <h2> What is the <span>Speciality Of Us?</span></h2>
-        </div>
-    )
+export default class PortfolioSection extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            list: []
+        };
+    }
 
+    render() {
+        return (
+            <React.Fragment id={this.props.id}>
+                <h3>What is the <span>Speciality of Us?</span></h3>
+                <PortfolioCard imgUrl="https://i.pinimg.com/736x/e7/96/0a/e7960a0ca60318c52c48d7081f964fe7.jpg" id="1" title="potato" text="asdadsadas" />
+            </React.Fragment>
+        );
+    }
 }
+
