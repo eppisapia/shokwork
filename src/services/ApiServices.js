@@ -7,11 +7,8 @@ import axios from 'axios';
  */
 
 export const newsApi = axios.create({
-    baseURL: "https://newsapi.org/v2/sources",
-    timeout: 60000,
-    params: {
-        apiKey: "b9c715d7b95444f9bf4bfa403d1e890e"
-    }
+    baseURL: "https://newsapi.org/v2/sources?apiKey=b9c715d7b95444f9bf4bfa403d1e890e",
+    timeout: 60000
 });
 
 export const jsonApi = axios.create({
