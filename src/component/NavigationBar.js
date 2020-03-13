@@ -15,7 +15,7 @@ export default function NavigationBar() {
                             duration={500}> Home </Link>
                     </Nav.Link>
                     <Nav.Link>
-                        <Link activeClass="active" to="section2" spy={true} smooth={true} offset={-70}
+                        <Link activeClass="active" to="aboutSection" spy={true} smooth={true} offset={-70}
                             duration={500}> About </Link>
                     </Nav.Link>
                     <Nav.Link>
