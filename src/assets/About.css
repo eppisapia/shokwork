@@ -1,0 +1,17 @@
+#aboutSection {
+    padding: 10%;
+}
+
+.aboutItem {
+    margin-top: 10% !important;
+}
+
+#aboutSection p {
+    margin-top: 30px;
+    font-weight: lighter;
+    color: lightslategray;
+}
+
+.aboutInfo {
+    margin-top: 20px;
+}

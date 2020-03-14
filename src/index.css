@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+span {
+  font-weight: 700;
+}
+
+.primaryButton {
+  background-image: linear-gradient(to right, #0C0C48 , #045C61);
+  color: white;
+  margin: 12px;
+  padding: 10px 20px 10px 20px;
+  font-size: 0.70em;
+  font-weight: 500;    
+}
+
+.secondaryButton {
+  background-color: white;
+  color: #045C61;
+  border-color: #045C61;
+  border-width: 1px;
+  margin: 12px;
+  padding: 10px 30px 10px 30px;
+  font-size: 0.70em;
+  font-weight: bold;
+}

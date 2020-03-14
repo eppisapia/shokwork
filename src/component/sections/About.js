@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image, Button, Container, Row, Col } from 'react-bootstrap';
+import '../../assets/About.css';
 
 export default function AboutSection({ id }) {
     return (

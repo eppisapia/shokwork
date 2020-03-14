@@ -1,0 +1,41 @@
+
+
+.stakeholderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.stakeholderImage {
+    width: 150px !important;
+}
+
+.stakeholderCard {
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+    margin: 10px;
+    padding-top: 30px;
+    color: #045C61;
+}
+
+#stakeholdersSection label {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;    
+}
+
+#stakeholdersSection h2 {
+    padding: 20px;
+}
+
+.stakeholderCard :hover {
+    color: white !important;
+    background-color: #045C61 !important;
+}
+
+.stakeholderCard :hover label {
+    font-size: 18px
+}

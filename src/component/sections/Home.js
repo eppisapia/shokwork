@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Button, Container } from 'react-bootstrap';
-import './Sections.css'
+import '../../assets/Home.css'
 
 export default function HomeSection({ id }) {
     return (

@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { getJsonApi } from '../../services/actions';
 import { Image, Container, Row, Col } from 'react-bootstrap';
 import CommentItem from '../CommentItem';
+import '../../assets/Comments.css';
 
 class CommentsSection extends React.Component {
 

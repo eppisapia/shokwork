@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-export default function AboutSection({ name, email, body }) {
+import '../assets/Comments.css';
+
+export default function CommentItem({ name, email, body }) {
     return (
         <Container className="commentItem commentCol">
             <p>{body}</p>

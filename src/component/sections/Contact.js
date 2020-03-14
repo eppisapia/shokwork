@@ -3,6 +3,7 @@ import { Container, Form, Button, Col, Modal } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { postJsonApi } from '../../services/actions';
+import '../../assets/Contact.css';
 
 class Contact extends React.Component {
     constructor(props) {

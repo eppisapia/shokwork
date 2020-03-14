@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
+import '../assets/Portfolio.css';
 
 export default class PortfolioCard extends React.Component {
     constructor(props) {

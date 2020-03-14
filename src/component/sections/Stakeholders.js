@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
-import './Sections.css';
+import '../../assets/Stakeholders.css';
 
 export default function StakeholderSection({ id }) {
     return (

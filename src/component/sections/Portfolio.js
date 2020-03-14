@@ -1,5 +1,5 @@
 import React from 'react';
-import './Sections.css'
+import '../../assets/Portfolio.css'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getNewsApi } from '../../services/actions';

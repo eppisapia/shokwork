@@ -1,12 +1,12 @@
 import React from "react";
 import { Nav, Navbar, Form, FormControl, Button } from "react-bootstrap";
 import { Link } from "react-scroll";
-import "../App.css";
+import "../assets/NavigationBar.css";
 
 export default function NavigationBar() {
     return (
         <Navbar expand="lg" className="myNavigationBar">
-            <Navbar.Brand href="/">ShokWork</Navbar.Brand>
+            <Navbar.Brand href="/"><h1>ShokWork</h1></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
@@ -23,10 +23,10 @@ export default function NavigationBar() {
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button className="primaryButton">
-                        <Link activeClass="active" to="contactSection" spy={true} smooth={true} offset={-70}
-                            duration={500}> Contact Us </Link>
-                    </Button>
+
+                    <Link activeClass="active" to="contactSection" spy={true} smooth={true} offset={-70}
+                        duration={500}><Button className="primaryButton"> Contact Us </Button> </Link>
+
                 </Form>
 
             </Navbar.Collapse>
