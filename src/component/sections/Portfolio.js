@@ -28,7 +28,6 @@ class PortfolioSection extends React.Component {
     }
 
     onClick = (index) => {
-        console.log("hey")
         if (index >= this.state.list.length) {
             index = this.state.list.length - 1;
         }

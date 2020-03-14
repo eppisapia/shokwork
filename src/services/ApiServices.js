@@ -12,10 +12,14 @@ export const newsApi = axios.create({
 });
 
 export const jsonApi = axios.create({
-    baseURL: "https://jsonplaceholder.typicode.com/",
+    baseURL: "https://jsonplaceholder.typicode.com/posts",
     timeout: 60000
 });
 
 export const getNewsApi = (path) => {
     return newsApi.get(path);
+}
+
+export const getjsonApi = (path) => {
+    return jsonApi.get(path)
 }

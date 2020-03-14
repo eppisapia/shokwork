@@ -18,9 +18,8 @@ export default function NavigationBar() {
                         duration={500}> Portfolio </Link>
                     <Link activeClass="active" to="stakeholdersSection" spy={true} smooth={true} offset={-70}
                         duration={500}> Career </Link>
-                    <Link activeClass="active" to="section5" spy={true} smooth={true} offset={-70}
+                    <Link activeClass="active" to="commentsSection" spy={true} smooth={true} offset={-70}
                         duration={500}> Blog </Link>
-
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />

@@ -7,8 +7,16 @@ const newsApiReducer = (state = {}, action) => {
     }
 }
 
+const jsonApiReducer = (state = {}, action) => {
+    switch (action.type) {
+        default:
+            return state
+    }
+}
+
 const allReducers = combineReducers({
-    newsApi: newsApiReducer
+    newsApi: newsApiReducer,
+    jsonApi: jsonApiReducer
 })
 
 export default allReducers;
