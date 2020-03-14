@@ -6,6 +6,7 @@ export const getNewsApi = (onSuccess, onError) => ({
 
 export const getJsonApi = (path, onSuccess, onError) => ({
     type: "GET_JSON_API",
+    path,
     onSuccess,
     onError
 })
