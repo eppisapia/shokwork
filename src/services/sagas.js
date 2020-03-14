@@ -46,12 +46,30 @@ function* watchGetJsonApi() {
 }
 
 /**
+ * Function to consume Post service from jsonplaceholder.typeicode.com/
+ * @param {*} action Redux action to perform
+ */
+function* postJsonApi(action) {
+    try {
+        const data = yield call(myServices.postJsonApi, action.path, action.body)
+        action.onSuccess(data)
+    } catch (error) {
+        action.onError(error)
+    }
+}
+
+function* watchPostJsonApi() {
+    yield takeLatest("POST_JSON_API", postJsonApi)
+}
+
+/**
  * Insert listener into Redux-Saga
  */
 function* allSagas() {
     yield all([
         watchGetNewsApi(),
-        watchGetJsonApi()
+        watchGetJsonApi(),
+        watchPostJsonApi()
     ])
 }
 

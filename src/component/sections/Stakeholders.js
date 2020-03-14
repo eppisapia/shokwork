@@ -5,7 +5,7 @@ import './Sections.css';
 export default function StakeholderSection({ id }) {
     return (
         <Container id={id} fluid className="stakeholderContainer">
-            <h2> {'Our Partners & Clients '}</h2>
+            <h2> {'Our Partners & Clients'}</h2>
             <Row >
                 <Col xs={4}>
                     <Row>

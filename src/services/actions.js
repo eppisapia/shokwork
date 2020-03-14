@@ -10,3 +10,11 @@ export const getJsonApi = (path, onSuccess, onError) => ({
     onSuccess,
     onError
 })
+
+export const postJsonApi = (path, body, onSuccess, onError) => ({
+    type: "POST_JSON_API",
+    path,
+    body,
+    onSuccess,
+    onError
+})

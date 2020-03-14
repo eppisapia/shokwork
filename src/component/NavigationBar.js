@@ -23,8 +23,12 @@ export default function NavigationBar() {
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button className="primaryButton">Contact Us</Button>
+                    <Button className="primaryButton">
+                        <Link activeClass="active" to="contactSection" spy={true} smooth={true} offset={-70}
+                            duration={500}> Contact Us </Link>
+                    </Button>
                 </Form>
+
             </Navbar.Collapse>
         </Navbar>
     )

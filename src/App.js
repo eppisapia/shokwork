@@ -19,7 +19,6 @@ import allSagas from './services/sagas';
  */
 import NavigationBar from './component/NavigationBar';
 import Home from './component/Home';
-import Contact from './component/sections/Contact';
 import NoMatch from './component/sections/NoMatch';
 import About from './component/sections/About';
 

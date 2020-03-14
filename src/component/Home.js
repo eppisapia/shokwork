@@ -1,13 +1,14 @@
 import React from 'react';
-import Section from './sections/Section';
 /**
  * This should be in an Index
  */
+import { Container } from 'react-bootstrap';
 import HomeSection from './sections/Home';
 import AboutSection from './sections/About';
 import PortfolioSection from './sections/Portfolio';
 import StakeholderSection from './sections/Stakeholders';
 import CommentsSection from './sections/Comments';
+import Contact from './sections/Contact';
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
             <PortfolioSection id="portfolioSection" />
             <StakeholderSection id="stakeholdersSection" />
             <CommentsSection id="commentsSection" />
+            <Contact id="contactSection" />
         </div>
 
     );

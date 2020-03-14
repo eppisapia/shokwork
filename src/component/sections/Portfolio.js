@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getNewsApi } from '../../services/actions';
 import PortfolioCard from '../PortfolioCard';
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 
 class PortfolioSection extends React.Component {
     constructor(props) {
@@ -46,7 +46,7 @@ class PortfolioSection extends React.Component {
     render() {
         const { selected, list } = this.state;
         return (
-            <div id={this.props.id}>
+            <Container className="p-0" id={this.props.id}>
                 <h3>What is the <span>Speciality of Us?</span></h3>
                 <div className="portfolioList">
                     {
@@ -68,7 +68,7 @@ class PortfolioSection extends React.Component {
                         <Button type="submit" className="arrowButton" onClick={() => { this.onClick(this.state.selected + 4) }}> {"->"} </Button>
                     </div>
                 </div>
-            </div>
+            </Container>
         );
     }
 }

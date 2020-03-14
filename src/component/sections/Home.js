@@ -1,10 +1,10 @@
 import React from 'react';
-import { Image, Button } from 'react-bootstrap';
+import { Image, Button, Container } from 'react-bootstrap';
 import './Sections.css'
 
 export default function HomeSection({ id }) {
     return (
-        <div id={id} className="home">
+        <Container id={id} className="p-0">
             {/**
              * Used style in Image for basic responsive and keep Bootstrap inner styles
              */}
@@ -14,7 +14,7 @@ export default function HomeSection({ id }) {
                 <Button className="primaryButton" >Our Works</Button>
                 <Button className="secondaryButton">Know More</Button>
             </div>
-        </div>
+        </Container>
     )
 
 }

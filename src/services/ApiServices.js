@@ -23,3 +23,7 @@ export const getNewsApi = (path) => {
 export const getjsonApi = (path) => {
     return jsonApi.get(path)
 }
+
+export const postJsonApi = (path, body) => {
+    return jsonApi.post(path, body)
+}
