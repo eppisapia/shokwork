@@ -1,6 +1,5 @@
-export const getNewsApi = (path, onSuccess, onError) => ({
+export const getNewsApi = (onSuccess, onError) => ({
     type: "GET_NEWS_API",
-    path,
     onSuccess,
     onError
 })

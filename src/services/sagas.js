@@ -9,7 +9,7 @@ import { call, takeLatest } from 'redux-saga/effects';
 
 function* getNewsApi(action) {
     try {
-        const data = yield call(myServices.getNewsApi, action.path)
+        const data = yield call(myServices.getNewsApi)
         action.onSuccess(data)
     } catch (error) {
         action.onError(error)
